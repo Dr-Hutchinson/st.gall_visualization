@@ -121,13 +121,13 @@ if selected_area != 'None':
                 content_to_display.append({'type': 'text', 'content': basilica_text_2})
 
                 # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images\image_2.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_2.png'})
 
                 # Text Section 3
                 content_to_display.append({'type': 'text', 'content': basilica_text_3})
 
                 # Image 3
-                content_to_display.append({'type': 'image', 'content': 'app_images\image_4.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_4.png'})
 
                 # Text Section 4
                 content_to_display.append({'type': 'text', 'content': basilica_text_4})
