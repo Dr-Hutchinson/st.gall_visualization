@@ -123,7 +123,7 @@ education_text_3 = """**House for Guests and Pilgrims:** Embodying the Benedicti
 education_text_4 = """**The Abbot's House:** The Abbot's House, prominently situated near the school and guest accommodations on the St. Gall Plan, stands as a testament to the abbot's paramount role in the monastery. As the spiritual and administrative leader, the abbot held divinely mandated authority, acting as Christ's representative within the community. Chosen for virtue and wisdom, he ensured adherence to the Rule of St. Benedict, oversaw the monastery's daily affairs, arbitrated disciplinary matters, and represented the institution in external interactions with nobility and the church. Moreover, embodying the Benedictine ethos of hospitality, the abbot's residence often welcomed guests, pilgrims, and those seeking counsel, making it a bastion of faith and benevolence in the medieval era."""
 
 # Check if an area is selected Education and Hospitality at St. Gall= '\n\nIn the medieval era, monasteries weren't solely dedicated to worship; they also served as beacons of education, knowledge dissemination, and welcoming hospitality. The St. Gall Plan's meticulous design prominently features spaces that catered to both the mind and the soul, especially evident in the western sections of the monastery.one':
-    zoom_to_area = True
+zoom_to_area = True
     for point in annotation_points:
         if point['name'] == selected_area:
             zoom_x_range = [point['x'] - 200, point['x'] + 200]
