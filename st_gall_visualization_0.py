@@ -29,7 +29,7 @@ fig.add_layout_image(
 annotation_points = [
     {'name': 'The Basilica', 'x': 300, 'y': 550, 'text': 'The Basilica'},
     {'name': 'Health Care and Healing', 'x': 225, 'y': 875, 'text': 'Health Care and Healing'},
-    #{'name': 'Area 2', 'x': 523.26, 'y': 138.33, 'text': 'Area 2: New Explanation'},
+    {'name': 'Education and Hospitality', 'x': 625, 'y': 175, 'text': 'Education and Hospitality'},
     {'name': 'Pens and Stables', 'x': 525, 'y': 300, 'text': 'Pens and Stables'},
     #{'name': 'Area 3', 'x': 258.98, 'y': 426.89, 'text': 'Area 3: New Explanation'},
     #{'name': 'Area 3', 'x': 300, 'y': 550, 'text': 'Area 3: New Explanation'},
