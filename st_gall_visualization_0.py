@@ -108,6 +108,10 @@ crafts_text_3 = """**Food Storage and Production:**\n\n**Storeroom for grain:** 
 
 health_text_1 = """**Medical Care in Monastic Communities During Medieval Times:**\n\nIn the medieval era, monastic communities played a pivotal role in healthcare. These establishments were not merely spiritual havens; they were also centers of healing, knowledge, and medical innovation. Many monasteries harbored a wealth of medical expertise, often grounded in ancient texts and traditions, serving both their monastic residents and the surrounding populace."""
 health_text_2 = """**Medical Herb Garden:** Renowned for their herbal expertise, monastic communities cultivated gardens teeming with plants, which were meticulously harnessed to create remedies. This garden symbolizes the monastery's commitment to natural healing, with herbs addressing ailments ranging from minor discomforts to severe diseases.\n\n**Physician's Residence:** Near the herb garden lies the Physician's Residence, a clear indicator of the monastery's dedicated healthcare approach. Here, the resident physician, well-versed in both spiritual and medical realms, attended to the monks, guests, and peasants. The closeness to the medical herb garden reaffirms the intrinsic link between nature and healing."""
+health_text_3 = """**Bloodletting Room:**\n\nVenturing further, we encounter the Bloodletting Room. This practice, deeply influenced by the theories of the ancient Greek physican Galen, aimed at balancing the body's four humors: blood, phlegm, yellow bile, and black bile. An imbalance was believed to cause illness. Thus, bloodletting, whether via leeches or instruments, sought to restore this harmony."""
+health_text_4 = """**Rooms for the Critically Ill:**\n\nNearby, the rooms for the critically ill accentuate the monastery's comprehensive care ethos. Here, those with acute conditions were tended to in isolation, both to prevent contagion and to ensure a serene recovery environment.\n\n**Warming Rooms and Sleeping Rooms:** The adjacent Warming Rooms and Sleeping Rooms encapsulate the monastery's philosophy that healing is multifaceted, encompassing warmth, comfort, and restful repose.\n\n**Cloisters of the Sick & Novitiate:** At the heart of this healthcare hub is the Cloisters of the Sick and the Novitiate. This serene space provided solace to the ailing while also serving as a formative ground for novices— those individuals at the threshold of their monastic journey. A novice embarked on a period of intense spiritual and practical training, post which they would take their monastic vows and be fully integrated into the monastic community."""
+health_text_5 = """**Refectory and Store Rooms:** The Refectory stands as a testament to the monastery's holistic approach to life. More than just a dining hall, it was a space of communion and reflection where monks gathered for communal meals, emphasizing the integration of physical sustenance with spiritual nourishment. The medieval monastic diet was modest but nutritious, primarily consisting of grains like barley and rye, legumes, vegetables from the garden, and fruits from the orchard. On special occasions or for those requiring it, the diet could be supplemented with dairy products from cows and goats, and eggs from the chickens. Pigs provided a source of meat, though meat consumption was often limited due to religious observances. The presence of the pens for goats, cows, pigs, and chickens, alongside an orchard and vegetable garden in the St. Gall Plan, exemplifies a self-sustaining community, ensuring a balanced diet for its inhabitants."""
+
 
 # Check if an area is selected from the dropdown
 if selected_area != 'None':
@@ -185,7 +189,7 @@ if selected_area != 'None':
                 content_to_display.append({'type': 'text', 'content': health_text_1})
 
                 # Image 1
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_11.png'})
 
                 # Text Section 2
                 content_to_display.append({'type': 'text', 'content': health_text_2})
@@ -194,7 +198,19 @@ if selected_area != 'None':
                 #content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
 
                 # Text Section 3
-                #content_to_display.append({'type': 'text', 'content': crafts_text_3})
+                content_to_display.append({'type': 'text', 'content': health_text_3})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': health_text_4})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': health_text_5})
 
             elif selected_area == "Area 4":
                 content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
