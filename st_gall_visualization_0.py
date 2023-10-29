@@ -97,8 +97,10 @@ education_text_1 = """**Scholarship, Stewardship, and Shelter: Education and Hos
 education_text_2 = """**School:** At the core of the monastic educational journey was the school. Here, young monks and novices didn't only receive foundational religious education but were also introduced to diverse subjects like Latin, mathematics, and music. A key text that students would have encountered, and which is also present in this app's curriculum, is the "Colloquy of Aelfric." This Old English text was not just a language-learning tool but also a window into the daily life, occupations, and societal structures of the time. Such texts exemplify how monastic schools were hubs of comprehensive learning, blending spiritual teachings with broader educational content."""
 education_text_3 = """**House for Guests and Pilgrims:** Embodying the Benedictine ethos of hospitality, the House for Guests was a testament to the monastery's commitment to welcoming all. Whether they were scholars seeking knowledge, travelers looking for shelter, or pilgrims on a spiritual journey, the monastery doors were always open. This practice of open-hearted welcome finds its roots in the "Rule of St. Benedict," which admonishes: "All guests who present themselves are to be welcomed as Christ, for he himself will say: I was a stranger and you welcomed me (Matt 25:35)." This quote underscores the profound reverence with which guests were regarded, seeing in them the very image of Christ."""
 education_text_4 = """**The Abbot's House:** The Abbot's House, prominently situated near the school and guest accommodations on the St. Gall Plan, stands as a testament to the abbot's paramount role in the monastery. As the spiritual and administrative leader, the abbot held divinely mandated authority, acting as Christ's representative within the community. Chosen for virtue and wisdom, he ensured adherence to the Rule of St. Benedict, oversaw the monastery's daily affairs, arbitrated disciplinary matters, and represented the institution in external interactions with nobility and the church. Moreover, embodying the Benedictine ethos of hospitality, the abbot's residence often welcomed guests, pilgrims, and those seeking counsel, making it a bastion of faith and benevolence in the medieval era."""
+
 # Check if an area is selected Education and Hospitality at St. Gall= '\n\nIn the medieval era, monasteries weren't solely dedicated to worship; they also served as beacons of education, knowledge dissemination, and welcoming hospitality. The St. Gall Plan's meticulous design prominently features spaces that catered to both the mind and the soul, especially evident in the western sections of the monastery.one':
-zoom_to_area = True
+#zoom_to_area = True
+
 for point in annotation_points:
     if point['name'] == selected_area:
         zoom_x_range = [point['x'] - 200, point['x'] + 200]
@@ -196,7 +198,11 @@ for point in annotation_points:
             # Text Section 3
             content_to_display.append({'type': 'text', 'content': education_text_4})
         break
+
+
+
 # Sliders for zooming
+
 x_range = st.slider('Horizontal Position (Zoom)', 0, 850, default_x_range, 50, key='x_slider')
 # Debug statements to check the type and value of default_y_range
 #st.write("Before Streamlit y-slider - Type of default_y_range:", type(default_y_range))
@@ -207,6 +213,7 @@ default_x_range = max(0, default_x_range)
 default_y_range = max(0, default_y_range)
 #st.write("After applying constraints - default_y_range:", default_y_range)
 y_range = st.slider('Vertical Position (Zoom)', 0, 850, default_y_range, 50, key='y_slider')
+
 # Update figure based on input
 if x_range != 0 or y_range != 0:
     fig.update_xaxes(range=[x_range, x_range + 400])
@@ -217,6 +224,8 @@ elif zoom_to_area:
 else:
     fig.update_xaxes(range=[0, 1000])
     fig.update_yaxes(range=[0, 1000])
+
+
 # Update layout properties
 fig.update_layout(
     width=700,
