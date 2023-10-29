@@ -262,3 +262,6 @@ for item in content_to_display:
     elif item['type'] == 'image':
         image = Image.open(item['content'])
         st.image(image)
+
+
+st.write("Created by Daniel Hutchinson. Full code [here](https://github.com/Dr-Hutchinson/st.gall_visualization)")
