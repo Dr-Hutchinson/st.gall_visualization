@@ -117,8 +117,12 @@ orchard_text_2 = """**Orchard & Cemetery:** Directly adjoining each other, the O
 orchard_text_3 = """**Vegetable Garden:** Just to the right of the Cemetery, the Vegetable Garden is a testament to the monastery's self-sufficiency. Here, a variety of vegetables essential for the monastic diet were cultivated. This garden not only fed the community but also served as a place of labor, contemplation, and connection to the earth. Vegetables grown here formed the backbone of the daily meals in the Refectory, emphasizing fresh and seasonal produce."""
 orchard_text_4 = """**Geese Enclosure:** The Geese Enclosure, located at the very top-right corner, played multiple roles. Geese provided feathers for bedding and quills, meat for consumption, and eggs for both eating and use in baking. Additionally, geese often served as an early warning system due to their loud honks when strangers approached, indirectly bolstering the monastery's security.\n\n**Fowl Keeper's Residence:** Next to the Geese Enclosure is the residence of the Fowl Keeper. Tasked with tending to various birds within the monastery, the Fowl Keeper ensured their health, managed their breeding, and oversaw the collection of eggs. This position was crucial, given the significance of poultry in the monastic diet and economy.\n\n**Hen Pen:** The Hen Pen represents another pillar of the monastery's self-sustainability. Hens were invaluable for their consistent egg production, and their presence ensured a steady supply of protein for the community."""
 
-# Check if an area is selected from the dropdown
-if selected_area != 'None':
+education_text_1 = """***Scholarship, Stewardship, and Shelter: Education and Hospitality at St. Gall***\n\nIn the medieval era, monasteries weren't solely dedicated to worship; they also served as beacons of education and welcoming hospitality. The St. Gall Plan's meticulous design prominently features spaces that catered to both the mind, body, and the soul, especially evident in the western sections of the monastery."""
+education_text_2 = """School: At the core of the monastic educational journey was the school. Here, young monks and novices didn't only receive foundational religious education but were also introduced to diverse subjects like Latin, mathematics, and music. A key text that students would have encountered, and which is also present in this app's curriculum, is the "Colloquy of Aelfric." This Old English text was not just a language-learning tool but also a window into the daily life, occupations, and societal structures of the time. Such texts exemplify how monastic schools were hubs of comprehensive learning, blending spiritual teachings with broader educational content."""
+education_text_3 = """**House for Guests and Pilgrims:** Embodying the Benedictine ethos of hospitality, the House for Guests was a testament to the monastery's commitment to welcoming all. Whether they were scholars seeking knowledge, travelers looking for shelter, or pilgrims on a spiritual journey, the monastery doors were always open. This practice of open-hearted welcome finds its roots in the "Rule of St. Benedict," which admonishes: "All guests who present themselves are to be welcomed as Christ, for he himself will say: I was a stranger and you welcomed me (Matt 25:35)." This quote underscores the profound reverence with which guests were regarded, seeing in them the very image of Christ."""
+education_text_4 = """**The Abbot's House:** The Abbot's House, prominently situated near the school and guest accommodations on the St. Gall Plan, stands as a testament to the abbot's paramount role in the monastery. As the spiritual and administrative leader, the abbot held divinely mandated authority, acting as Christ's representative within the community. Chosen for virtue and wisdom, he ensured adherence to the Rule of St. Benedict, oversaw the monastery's daily affairs, arbitrated disciplinary matters, and represented the institution in external interactions with nobility and the church. Moreover, embodying the Benedictine ethos of hospitality, the abbot's residence often welcomed guests, pilgrims, and those seeking counsel, making it a bastion of faith and benevolence in the medieval era."""
+
+# Check if an area is selected Education and Hospitality at St. Gall= '\n\nIn the medieval era, monasteries weren't solely dedicated to worship; they also served as beacons of education, knowledge dissemination, and welcoming hospitality. The St. Gall Plan's meticulous design prominently features spaces that catered to both the mind and the soul, especially evident in the western sections of the monastery.one':
     zoom_to_area = True
     for point in annotation_points:
         if point['name'] == selected_area:
@@ -238,8 +242,27 @@ if selected_area != 'None':
                 # Text Section 3
                 content_to_display.append({'type': 'text', 'content': orchard_text_4})
 
-            elif selected_area == "Area 5":
-                content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
+            elif selected_area == "Education and Hospitality":
+                # Text Section 1
+                content_to_display.append({'type': 'text', 'content': education_text_1})
+
+                # Image 1
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_15.png'})
+
+                # Text Section 2
+                content_to_display.append({'type': 'text', 'content': education_text_2})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_16.png'})
+
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': education_text_3})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_17.png'})
+
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': education_text_4})
 
             break
 
