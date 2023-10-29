@@ -88,7 +88,7 @@ if not isinstance(default_y_range, int):
     default_y_range = int(default_y_range[0])  # or any other logic to convert it to int
 
 # Dropdown for quick navigation
-selected_area = st.selectbox('Quick Navigate to:', ['None] + [point['name'] for point in annotation_points])
+selected_area = st.selectbox('Quick Navigate to:', ['None'] + [point['name'] for point in annotation_points])
 
 content_to_display = []
 
