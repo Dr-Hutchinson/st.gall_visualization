@@ -221,7 +221,7 @@ if selected_area != 'None':
                 content_to_display.append({'type': 'text', 'content': orchard_text_1})
 
                 # Image 1
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_11.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_15.png'})
 
                 # Text Section 2
                 content_to_display.append({'type': 'text', 'content': orchard_text_2})
