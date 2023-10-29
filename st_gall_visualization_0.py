@@ -160,26 +160,26 @@ if selected_area != 'None':    zoom_to_area = True
                 # Text Section 4
                 content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
             elif selected_area == "Crafts and Artisans":
-                    # Text Section 1
-                    content_to_display.append({'type': 'text', 'content': crafts_text_1})
+                # Text Section 1
+                content_to_display.append({'type': 'text', 'content': crafts_text_1})
 
-                    # Image 1
-                    content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
+                # Image 1
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
 
-                    # Text Section 2
-                    content_to_display.append({'type': 'text', 'content': crafts_text_2})
+                # Text Section 2
+                content_to_display.append({'type': 'text', 'content': crafts_text_2})
 
-                    # Image 2
-                    content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+                # Image 2
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
 
-                    # Text Section 3
-                    content_to_display.append({'type': 'text', 'content': crafts_text_3})
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': crafts_text_3})
 
-                    # Image 3
-                    #content_to_display.append({'type': 'image', 'content': 'app_images/image_8.png'})
+                # Image 3
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_8.png'})
 
-                    # Text Section 4
-                    content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
+                # Text Section 4
+                #content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
             elif selected_area == "Area 3":
                 content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
             elif selected_area == "Area 4":
