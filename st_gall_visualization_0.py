@@ -70,13 +70,11 @@ with st.expander("How to Navigate the App:", expanded=True):
     **Manual Zoom:**
 
     Horizontal Position (Zoom): Slide to move the view left and right across the image.\n
-    Vertical Position (Zoom): Slide to move the view vertically up and down the image.\n
+    Vertical Position (Zoom): Slide to move the view up and down the image.\n
 
     **Reset View:**
 
-    To reset the view to the full image, set both sliders to 0 and select "None" from the Quick Navigate menu.\n
-
-    **Hover Information**: Hover over the red markers on the image to see additional information about different areas.
+    To reset the view to the full image, set both sliders to 0 and select "Full View" from the Quick Navigate menu.\n
     """)
 
 zoom_to_area = False
@@ -90,7 +88,7 @@ if not isinstance(default_y_range, int):
     default_y_range = int(default_y_range[0])  # or any other logic to convert it to int
 
 # Dropdown for quick navigation
-selected_area = st.selectbox('Quick Navigate to:', ['None'] + [point['name'] for point in annotation_points])
+selected_area = st.selectbox('Quick Navigate to:', ['Full View'] + [point['name'] for point in annotation_points])
 
 content_to_display = []
 
