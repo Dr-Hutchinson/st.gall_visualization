@@ -264,6 +264,7 @@ for point in annotation_points:
 
         break
 
+default_x_range = max(0, default_x_range)
 # Sliders for zooming
 x_range = st.slider('Horizontal Position (Zoom)', 0, 850, default_x_range, 50, key='x_slider')
 
