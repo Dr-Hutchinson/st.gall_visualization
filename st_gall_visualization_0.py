@@ -28,14 +28,14 @@ fig.add_layout_image(
 
 annotation_points = [
     {'name': 'The Basilica', 'x': 300, 'y': 550, 'text': 'The Basilica'},
-    {'name': 'Area 1', 'x': 225, 'y': 875, 'text': 'Area 1: New Explanation'},
+    {'name': 'Health Care and Healing', 'x': 225, 'y': 875, 'text': 'Health Care and Healing'},
     #{'name': 'Area 2', 'x': 523.26, 'y': 138.33, 'text': 'Area 2: New Explanation'},
     {'name': 'Pens and Stables', 'x': 525, 'y': 300, 'text': 'Pens and Stables'},
     #{'name': 'Area 3', 'x': 258.98, 'y': 426.89, 'text': 'Area 3: New Explanation'},
     #{'name': 'Area 3', 'x': 300, 'y': 550, 'text': 'Area 3: New Explanation'},
     {'name': 'Crafts and Artisans', 'x': 725, 'y': 525, 'text': 'Crafts and Artisans'},
     #{'name': 'Area 5', 'x': 504.38, 'y': 835.45, 'text': 'Area 5: New Explanation'}
-    {'name': 'Area 5', 'x': 300, 'y': 900, 'text': 'Area 5: New Explanation'}
+    #{'name': 'Area 5', 'x': 300, 'y': 900, 'text': 'Area 5: New Explanation'}
 ]
 
 scatter_points = {
@@ -105,6 +105,9 @@ pens_stables_text_4 = """**Residence for Servants**:\n\nThis area denotes the ho
 crafts_text_1 = """**Craftsmanship and Labor in the St. Gall Plan**\n\nThe intricate planning evident in the St. Gall Monastery showcases its ambition to be more than just a spiritual hub; it aimed to be a self-sustaining community, thriving on the diverse skills of its inhabitants. Here's a deeper dive into the various roles and facilities dedicated to craftsmanship and labor within the monastery:"""
 crafts_text_2 = """**Crafts**:\n\n**Fuller:** These individuals played a vital role in treating and refining woolen cloth, making it thicker and more suitable for garments.\n\n**Shieldmaker:** As the name suggests, shieldmakers were responsible for crafting shields, potentially indicating that the monastery had its own security forces or catered to the needs of traveling knights or soldiers.\n\n**Goldsmith:** With their expertise in working with precious metals, goldsmiths were crucial for creating religious artifacts, jewelry, and sometimes coinage.\n\n**Blacksmith:** The backbone of many medieval communities, blacksmiths forged tools, agricultural implements, weapons, and other metal goods, ensuring the smooth functioning of everyday monastic life.\n\n**Grinders:** These craftsmen were likely involved in sharpening tools and weapons, a service that would be essential for both the monastery's craftsmen and its agricultural workers.\n\n**Turner:** Specializing in shaping wood using a lathe, turners would produce items like bowls, spindles, and other cylindrical wooden objects.\n\n**Cooper:** Coopers specialized in making wooden casks, barrels, and other staved containers. Their products were crucial for storage and transportation of liquids like water, beer, and wine."""
 crafts_text_3 = """**Food Storage and Production:**\n\n**Storeroom for grain:** Grain was a staple diet and a valuable commodity. Proper storage ensured the monastery had a consistent food supply and could also trade surplus grain.\n\n**Bakery and Brewery:** Bread and beer were dietary staples in the medieval era. The monastery's dedicated bakery would produce daily bread, while the brewery catered to the monks' consumption needs and also produced beverages for guests and trading.\n\n**Mill:** Essential for grinding grain into flour, the mill was a critical component of the monastery's food production process.\n\n**Granary:** A larger storage facility, the granary ensured that harvested grain was kept dry and safe from pests, guaranteeing food security for the community.\n\nThe presence of such a diverse range of craftspeople and facilities underlines the monastery's aspiration to be a self-contained community. Not only did this ensure the monks' needs were met, but it also positioned the monastery as a hub of trade and craftsmanship in the region. Such extensive planning exemplifies the monastic commitment to labor as a form of devotion, blending spiritual pursuits with the practical needs of day-to-day life."""
+
+health_text_0 = """**Medical Care in Monastic Communities During Medieval Times:**\n\nIn the medieval era, monastic communities played a pivotal role in healthcare. These establishments were not merely spiritual havens; they were also centers of healing, knowledge, and medical innovation. Many monasteries harbored a wealth of medical expertise, often grounded in ancient texts and traditions, serving both their monastic residents and the surrounding populace."""
+health_text_1 = """ """
 
 # Check if an area is selected from the dropdown
 if selected_area != 'None':
@@ -177,13 +180,22 @@ if selected_area != 'None':
                 # Text Section 3
                 content_to_display.append({'type': 'text', 'content': crafts_text_3})
 
-                # Image 3
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_8.png'})
+            elif selected_area == "Health Care and Healing":
+                # Text Section 1
+                content_to_display.append({'type': 'text', 'content': health_text_1})
 
-                # Text Section 4
-                #content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
-            elif selected_area == "Area 3":
-                content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
+                # Image 1
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
+
+                # Text Section 2
+                #content_to_display.append({'type': 'text', 'content': crafts_text_2})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+
+                # Text Section 3
+                #content_to_display.append({'type': 'text', 'content': crafts_text_3})
+
             elif selected_area == "Area 4":
                 content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
             elif selected_area == "Area 5":
