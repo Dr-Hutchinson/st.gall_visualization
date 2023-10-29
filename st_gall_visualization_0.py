@@ -107,7 +107,8 @@ crafts_text_2 = """Craftspeople:\n\n**Fuller:** These individuals played a vital
 crafts_text_3 = """**Food Storage and Production:**\n\n**Storeroom for grain:** Grain was a staple diet and a valuable commodity. Proper storage ensured the monastery had a consistent food supply and could also trade surplus grain.\n\n**Bakery and Brewery:** Bread and beer were dietary staples in the medieval era. The monastery's dedicated bakery would produce daily bread, while the brewery catered to the monks' consumption needs and also produced beverages for guests and trading.\\n**Mill:** Essential for grinding grain into flour, the mill was a critical component of the monastery's food production process.\n\n**Granary:** A larger storage facility, the granary ensured that harvested grain was kept dry and safe from pests, guaranteeing food security for the community. """
 
 # Check if an area is selected from the dropdown
-if selected_area != 'None':    zoom_to_area = True
+if selected_area != 'None':
+    zoom_to_area = True
     for point in annotation_points:
         if point['name'] == selected_area:
             zoom_x_range = [point['x'] - 200, point['x'] + 200]
@@ -159,6 +160,7 @@ if selected_area != 'None':    zoom_to_area = True
 
                 # Text Section 4
                 content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
+
             elif selected_area == "Crafts and Artisans":
                 # Text Section 1
                 content_to_display.append({'type': 'text', 'content': crafts_text_1})
