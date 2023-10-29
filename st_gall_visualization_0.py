@@ -66,7 +66,8 @@ with st.expander("How to Navigate the App:", expanded=True):
     st.write("""
     ### How to Navigate the Image
     **Quick Navigation**: Use the dropdown menu labeled "Quick Navigate to" to instantly zoom into specific areas of interest. The sliders below will automatically adjust to the selected area.
-    **Manual Zoom:**
+
+    **Manual Zoom:**\n
     Horizontal Position (Zoom): Slide to move the view left and right across the image.\n
     Vertical Position (Zoom): Slide to move the view vertically up and down the image.\n
     **Reset View:**
