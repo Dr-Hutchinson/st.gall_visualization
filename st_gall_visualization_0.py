@@ -97,8 +97,8 @@ basilica_text_2 = """Below these towers, the main entrance offers a welcoming me
 basilica_text_3 = """As you wander through the side aisles, pay special attention to the array of altars, each dedicated to specific saints. These altars aren't just places of worship but also a reflection of the religious veneration of the time. From Saints Lucia and Cecilia in the northern aisle to Saints Agatha and Agnes in the southern aisle, each altar has its own story, deeply rooted in Christian lore."""
 basilica_text_4 = """Throughout the tour, consider how the basilica, even in its unbuilt state, draws from genuine medieval monastic designs. The St. Gall Plan beautifully marries function with faith, creating a tapestry of architectural brilliance and religious devotion. If you ever get a chance, compare this design with extant medieval monasteries to appreciate the similarities and differences in their architectural choices."""
 
-
-
+pens_stables_text_1 = """Livestock Pens - Sheep, Goats, Cows, and Swine:\n\nSheep: Often reared for their wool, which was a crucial resource for making garments and bedding. The monastery would have likely had its own weavers turning this wool into valuable textiles.\nGoats: Besides their meat, goats were also kept for their milk which could be consumed directly or transformed into cheese, another staple in the monastic diet.\nCows: Predominantly reared for their milk, which was essential for producing butter and cheese. Beef might have also been consumed during specific periods, but was generally less common due to the cost and effort of raising cattle.\nSwine: Pigs were valuable for their meat. Their efficient feed-to-meat conversion rate made them a popular choice in monastic settings. Pork could be preserved as ham or bacon, ensuring provisions during winter months."""
+pens_stables_text_2 = """Brood Mares and Foals - Horse Breeding Area:\n\nMonasteries often played a pivotal role in maintaining and improving local livestock breeds. The inclusion of a dedicated area for breeding mares and foals suggests an interest in horse husbandry. Horses were indispensable, not just for transportation, but also for various labor-intensive tasks around the monastery, such as plowing fields or hauling goods."""
 
 # Check if an area is selected from the dropdown
 if selected_area != 'None':
@@ -132,8 +132,28 @@ if selected_area != 'None':
                 # Text Section 4
                 content_to_display.append({'type': 'text', 'content': basilica_text_4})
 
-            elif selected_area == "Area 1":
-                content_to_display.append({'type': 'text', 'content': basilica_text_1 })
+            elif selected_area == "Pens and Stables":
+
+                # Text Section 1
+                content_to_display.append({'type': 'text', 'content': pens_stables_text_1})
+
+                # Image 1
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_6.png'})
+
+                # Text Section 2
+                #content_to_display.append({'type': 'text', 'content': basilica_text_2})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_2.png'})
+
+                # Text Section 3
+                #content_to_display.append({'type': 'text', 'content': basilica_text_3})
+
+                # Image 3
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_4.png'})
+
+                # Text Section 4
+                #content_to_display.append({'type': 'text', 'content': basilica_text_4})
             elif selected_area == "Area 2":
                 content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
             elif selected_area == "Area 3":
