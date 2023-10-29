@@ -103,7 +103,8 @@ pens_stables_text_3 = """**Brood Mares and Foals - Horse Breeding Area:**\n\nMon
 pens_stables_text_4 = """**Residence for Servants**:\n\nThis area denotes the housing for the monastic estate's labor force. Many of these individuals were likely serfs, bound to the land and the service of the monastery. The nature of serfdom in the medieval period meant that peasants, while not wholly owned by the monastery, were obligated to provide labor in exchange for the right to live on and farm a portion of the monastic lands. This relationship was multifaceted: while serfs had certain obligations to the monastery, the religious institution also had duties of protection and spiritual guidance toward them. The proximity of the servants' residence to the livestock areas is indicative of their roles in ensuring the day-to-day operation of the monastery's agricultural and animal husbandry practices."""
 
 crafts_text_1 = """Craftsmanship and Labor at the St. Gall Monastery\n\nThe intricate planning evident in the St. Gall Monastery showcases its ambition to be more than just a spiritual hub; it aimed to be a self-sustaining community, thriving on the diverse skills of its inhabitants. Here's a deeper dive into the various roles and facilities dedicated to craftsmanship and labor within the monastery:"""
-crafts_text_2 =
+crafts_text_2 = """Craftspeople:\n\n**Fuller:** These individuals played a vital role in treating and refining woolen cloth, making it thicker and more suitable for garments.\n\n**Shieldmaker:** As the name suggests, shieldmakers were responsible for crafting shields, potentially indicating that the monastery had its own security forces or catered to the needs of traveling knights or soldiers.\n\n**Goldsmith:** With their expertise in working with precious metals, goldsmiths were crucial for creating religious artifacts, jewelry, and sometimes coinage.\n\n**Blacksmith:** The backbone of many medieval communities, blacksmiths forged tools, agricultural implements, weapons, and other metal goods, ensuring the smooth functioning of everyday monastic life.\n\n**Grinders:** These craftsmen were likely involved in sharpening tools and weapons, a service that would be essential for both the monastery's craftsmen and its agricultural workers.\n\n**Turner:** Specializing in shaping wood using a lathe, turners would produce items like bowls, spindles, and other cylindrical wooden objects.\n\n**Cooper:** Coopers specialized in making wooden casks, barrels, and other staved containers. Their products were crucial for storage and transportation of liquids like water, beer, and wine."""
+crafts_text_3 = """**Food Storage and Production:**\n\n**Storeroom for grain:** Grain was a staple diet and a valuable commodity. Proper storage ensured the monastery had a consistent food supply and could also trade surplus grain.\n\n**Bakery and Brewery:** Bread and beer were dietary staples in the medieval era. The monastery's dedicated bakery would produce daily bread, while the brewery catered to the monks' consumption needs and also produced beverages for guests and trading.\\n**Mill:** Essential for grinding grain into flour, the mill was a critical component of the monastery's food production process.\n\n**Granary:** A larger storage facility, the granary ensured that harvested grain was kept dry and safe from pests, guaranteeing food security for the community. """
 
 # Check if an area is selected from the dropdown
 if selected_area != 'None':    zoom_to_area = True
@@ -158,8 +159,27 @@ if selected_area != 'None':    zoom_to_area = True
 
                 # Text Section 4
                 content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
-            elif selected_area == "Area 2":
-                content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
+            elif selected_area == "Crafts and Artisans":
+                    # Text Section 1
+                    content_to_display.append({'type': 'text', 'content': crafts_text_1})
+
+                    # Image 1
+                    content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
+
+                    # Text Section 2
+                    content_to_display.append({'type': 'text', 'content': crafts_text_2})
+
+                    # Image 2
+                    content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+
+                    # Text Section 3
+                    content_to_display.append({'type': 'text', 'content': crafts_text_3})
+
+                    # Image 3
+                    #content_to_display.append({'type': 'image', 'content': 'app_images/image_8.png'})
+
+                    # Text Section 4
+                    content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
             elif selected_area == "Area 3":
                 content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
             elif selected_area == "Area 4":
