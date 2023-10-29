@@ -2,11 +2,15 @@ import base64
 import plotly.graph_objects as go
 import streamlit as st
 from PIL import Image
+
 with open("annotated_gall_plan.png", "rb") as image_file:
     base64_image = base64.b64encode(image_file.read()).decode()
+
 img_path = "data:image/png;base64," + base64_image
+
 # Create the initial figure
 fig = go.Figure()
+
 # Add background image
 fig.add_layout_image(
     dict(
@@ -21,6 +25,7 @@ fig.add_layout_image(
         sizing="stretch",
         source=img_path)
 )
+
 annotation_points = [
     {'name': 'The Basilica', 'x': 300, 'y': 550, 'text': 'The Basilica'},
     {'name': 'Health Care and Healing', 'x': 225, 'y': 875, 'text': 'Health Care and Healing'},
@@ -32,11 +37,13 @@ annotation_points = [
     {'name': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens', 'x': 615, 'y': 900, 'text': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens'}
     #{'name': 'Area 5', 'x': 300, 'y': 900, 'text': 'Area 5: New Explanation'}
 ]
+
 scatter_points = {
     'x': [point['x'] for point in annotation_points],
     'y': [point['y'] for point in annotation_points],
     'text': [point['text'] for point in annotation_points],
 }
+
 # Add scatter plot for annotations
 fig.add_trace(
     go.Scatter(
@@ -49,8 +56,11 @@ fig.add_trace(
         hoverinfo="text"
     )
 )
+
 # Streamlit app
 st.title("Interactive St. Gall Plan")
+
+st.write("This app explores the Plan of Saint Gall, a unique architectural drawing from the ninth century AD that documents many aspects of Benedictine monasticism. While never actually built, the plan detailed a community space for over 375 residents including monks, visitors, and craftsmen. This app utilizes artifical intelligence to visualize what life in this monastery might have looked like.")
 
 with st.expander("How to Navigate the App:", expanded=True):
     st.write("""
