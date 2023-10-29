@@ -59,7 +59,7 @@ fig.add_trace(
 
 # Streamlit app
 st.title("Visualizing the St. Gall Plan")
-
+st.write("Created by Daniel Hutchinson. Full code [here](https://github.com/Dr-Hutchinson/st.gall_visualization)")
 st.write("This app explores the Plan of Saint Gall, a unique architectural drawing from the ninth century AD that documents many aspects of Benedictine monasticism. While never actually built, the plan detailed a community space for over 375 residents including monks, visitors, and craftsmen. This app utilizes artifical intelligence to visualize what life in this monastery might have looked like.")
 
 with st.expander("How to Navigate the App:", expanded=True):
@@ -262,6 +262,3 @@ for item in content_to_display:
     elif item['type'] == 'image':
         image = Image.open(item['content'])
         st.image(image)
-
-
-st.write("Created by Daniel Hutchinson. Full code [here](https://github.com/Dr-Hutchinson/st.gall_visualization)")
