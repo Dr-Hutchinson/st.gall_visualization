@@ -64,7 +64,7 @@ st.write("This app explores the [Plan of Saint Gall](https://digital.library.ucl
 
 with st.expander("How to Navigate the App:", expanded=True):
     st.write("""
-    ### How to Navigate the Image
+    ### How to Navigate the App
     **Quick Navigation**: Use the dropdown menu labeled "Quick Navigate to" to instantly zoom into specific areas of interest. The sliders below will automatically adjust to the selected area.
 
     **Manual Zoom:**\n
