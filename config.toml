@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#8B4513" # Saddle Brown: Represents the wood and leather used in medieval monastic buildings
+backgroundColor = "#F5DEB3" # Wheat: A light, earthy tone to represent parchment
+secondaryBackgroundColor = "#D2B48C" # Tan: Another earthy tone, slightly darker to differentiate from the primary background
+textColor = "#3C2415" # Dark Brown: For readability and to evoke ink used in medieval manuscripts
+font = "Georgia" # Georgia is a modern serif font that has an old-style feel, suitable for historical content
