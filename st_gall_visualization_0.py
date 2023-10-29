@@ -74,7 +74,7 @@ with st.expander("How to Navigate the App:", expanded=True):
 
     **Reset View:**
 
-    To reset the view to the full image, set both sliders to 0 and select "Full View" from the Quick Navigate menu.\n
+    To reset the view to the full image, set both sliders to 0 and select "None" from the Quick Navigate menu.\n
     """)
 
 zoom_to_area = False
@@ -88,7 +88,7 @@ if not isinstance(default_y_range, int):
     default_y_range = int(default_y_range[0])  # or any other logic to convert it to int
 
 # Dropdown for quick navigation
-selected_area = st.selectbox('Quick Navigate to:', ['Full View'] + [point['name'] for point in annotation_points])
+selected_area = st.selectbox('Quick Navigate to:', ['None] + [point['name'] for point in annotation_points])
 
 content_to_display = []
 
