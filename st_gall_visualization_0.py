@@ -100,6 +100,7 @@ basilica_text_4 = """Throughout the tour, consider how the basilica, even in its
 pens_stables_text_1 = """**Pens and Stables**\n\nIn a monastery setting, especially during the medieval period, self-sustainability was vital. The St. Gall Plan, with its emphasis on providing for the community's needs, showcases several areas dedicated to animal husbandry—a practice intrinsic to the monastic way of life."""
 pens_stables_text_2 = """**Sheep:** Often reared for their wool, which was a crucial resource for making garments and bedding. The monastery would have likely had its own weavers turning this wool into valuable textiles.\n\n**Goats:** Besides their meat, goats were also kept for their milk which could be consumed directly or transformed into cheese, another staple in the monastic diet.\n\n**Cows:** Predominantly reared for their milk, which was essential for producing butter and cheese. Beef might have also been consumed during specific periods, but was generally less common due to the cost and effort of raising cattle.\n\n**Swine:** Pigs were valuable for their meat. Their efficient feed-to-meat conversion rate made them a popular choice in monastic settings. Pork could be preserved as ham or bacon, ensuring provisions during winter months."""
 pens_stables_text_3 = """**Brood Mares and Foals - Horse Breeding Area:**\n\nMonasteries often played a pivotal role in maintaining and improving local livestock breeds. The inclusion of a dedicated area for breeding mares and foals suggests an interest in horse husbandry. Horses were indispensable, not just for transportation, but also for various labor-intensive tasks around the monastery, such as plowing fields or hauling goods."""
+pens_stables_text_4 = """Residence for Servants:\n\nThis area denotes the housing for the monastic estate's labor force. Many of these individuals were likely serfs, bound to the land and the service of the monastery. The nature of serfdom in the medieval period meant that peasants, while not wholly owned by the monastery, were obligated to provide labor in exchange for the right to live on and farm a portion of the monastic lands. This relationship was multifaceted: while serfs had certain obligations to the monastery, the religious institution also had duties of protection and spiritual guidance toward them. The proximity of the servants' residence to the livestock areas is indicative of their roles in ensuring the day-to-day operation of the monastery's agricultural and animal husbandry practices."""
 
 # Check if an area is selected from the dropdown
 if selected_area != 'None':
@@ -145,10 +146,10 @@ if selected_area != 'None':
                 content_to_display.append({'type': 'text', 'content': pens_stables_text_2})
 
                 # Image 2
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_2.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_7.png'})
 
                 # Text Section 3
-                #content_to_display.append({'type': 'text', 'content': basilica_text_3})
+                content_to_display.append({'type': 'text', 'content': pens_stables_text_3})
 
                 # Image 3
                 #content_to_display.append({'type': 'image', 'content': 'app_images/image_4.png'})
