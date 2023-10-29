@@ -58,7 +58,7 @@ fig.add_trace(
 )
 
 # Streamlit app
-st.title("Interactive St. Gall Plan")
+st.title("Visualizing the St. Gall Plan")
 
 st.write("This app explores the Plan of Saint Gall, a unique architectural drawing from the ninth century AD that documents many aspects of Benedictine monasticism. While never actually built, the plan detailed a community space for over 375 residents including monks, visitors, and craftsmen. This app utilizes artifical intelligence to visualize what life in this monastery might have looked like.")
 
