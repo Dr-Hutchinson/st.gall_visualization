@@ -124,147 +124,145 @@ education_text_4 = """**The Abbot's House:** The Abbot's House, prominently situ
 
 # Check if an area is selected Education and Hospitality at St. Gall= '\n\nIn the medieval era, monasteries weren't solely dedicated to worship; they also served as beacons of education, knowledge dissemination, and welcoming hospitality. The St. Gall Plan's meticulous design prominently features spaces that catered to both the mind and the soul, especially evident in the western sections of the monastery.one':
 zoom_to_area = True
-    for point in annotation_points:
-        if point['name'] == selected_area:
-            zoom_x_range = [point['x'] - 200, point['x'] + 200]
-            zoom_y_range = [point['y'] - 200, point['y'] + 200]
-            default_x_range = int(point['x']) - 200  # Set slider default to selected area
-            default_y_range = int(point['y']) - 200  # Set slider default to selected area
+for point in annotation_points:
+    if point['name'] == selected_area:
+        zoom_x_range = [point['x'] - 200, point['x'] + 200]
+        zoom_y_range = [point['y'] - 200, point['y'] + 200]
+        default_x_range = int(point['x']) - 200  # Set slider default to selected area
+        default_y_range = int(point['y']) - 200  # Set slider default to selected area
 
-            if selected_area == "The Basilica":
-                # Text Section 1
-                content_to_display.append({'type': 'text', 'content': basilica_text_1})
+        if selected_area == "The Basilica":
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': basilica_text_1})
+            # Image 1
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_0.png'})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': basilica_text_2})
 
-                # Image 1
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_0.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_2.png'})
 
-                # Text Section 2
-                content_to_display.append({'type': 'text', 'content': basilica_text_2})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': basilica_text_3})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_2.png'})
+            # Image 3
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_4.png'})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': basilica_text_3})
+            # Text Section 4
+            content_to_display.append({'type': 'text', 'content': basilica_text_4})
 
-                # Image 3
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_4.png'})
+        elif selected_area == "Pens and Stables":
 
-                # Text Section 4
-                content_to_display.append({'type': 'text', 'content': basilica_text_4})
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': pens_stables_text_1})
 
-            elif selected_area == "Pens and Stables":
+            # Image 1
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_6.png'})
 
-                # Text Section 1
-                content_to_display.append({'type': 'text', 'content': pens_stables_text_1})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': pens_stables_text_2})
 
-                # Image 1
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_6.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_7.png'})
 
-                # Text Section 2
-                content_to_display.append({'type': 'text', 'content': pens_stables_text_2})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': pens_stables_text_3})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_7.png'})
+            # Image 3
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_8.png'})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': pens_stables_text_3})
+            # Text Section 4
+            content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
 
-                # Image 3
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_8.png'})
+        elif selected_area == "Crafts and Artisans":
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': crafts_text_1})
 
-                # Text Section 4
-                content_to_display.append({'type': 'text', 'content': pens_stables_text_4})
+            # Image 1
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
 
-            elif selected_area == "Crafts and Artisans":
-                # Text Section 1
-                content_to_display.append({'type': 'text', 'content': crafts_text_1})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': crafts_text_2})
 
-                # Image 1
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_9.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
 
-                # Text Section 2
-                content_to_display.append({'type': 'text', 'content': crafts_text_2})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': crafts_text_3})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+        elif selected_area == "Health Care and Healing":
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': health_text_1})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': crafts_text_3})
+            # Image 1
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_11.png'})
 
-            elif selected_area == "Health Care and Healing":
-                # Text Section 1
-                content_to_display.append({'type': 'text', 'content': health_text_1})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': health_text_2})
 
-                # Image 1
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_11.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_12.png'})
 
-                # Text Section 2
-                content_to_display.append({'type': 'text', 'content': health_text_2})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': health_text_3})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_12.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_13.png'})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': health_text_3})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': health_text_4})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_13.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_14.png'})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': health_text_4})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': health_text_5})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_14.png'})
+        elif selected_area == "The Orchard, Cemetery, Vegetable Garden, and Livestock Pens":
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': orchard_text_1})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': health_text_5})
+            # Image 1
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_15.png'})
 
-            elif selected_area == "The Orchard, Cemetery, Vegetable Garden, and Livestock Pens":
-                # Text Section 1
-                content_to_display.append({'type': 'text', 'content': orchard_text_1})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': orchard_text_2})
 
-                # Image 1
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_15.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_16.png'})
 
-                # Text Section 2
-                content_to_display.append({'type': 'text', 'content': orchard_text_2})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': orchard_text_3})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_16.png'})
+            # Image 2
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_17.png'})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': orchard_text_3})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': orchard_text_4})
 
-                # Image 2
-                content_to_display.append({'type': 'image', 'content': 'app_images/image_17.png'})
+        elif selected_area == "Education and Hospitality":
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': education_text_1})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': orchard_text_4})
+            # Image 1
+            #content_to_display.append({'type': 'image', 'content': 'app_images/image_15.png'})
 
-            elif selected_area == "Education and Hospitality":
-                # Text Section 1
-                content_to_display.append({'type': 'text', 'content': education_text_1})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': education_text_2})
 
-                # Image 1
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_15.png'})
+            # Image 2
+            #content_to_display.append({'type': 'image', 'content': 'app_images/image_16.png'})
 
-                # Text Section 2
-                content_to_display.append({'type': 'text', 'content': education_text_2})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': education_text_3})
 
-                # Image 2
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_16.png'})
+            # Image 2
+            #content_to_display.append({'type': 'image', 'content': 'app_images/image_17.png'})
 
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': education_text_3})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': education_text_4})
 
-                # Image 2
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_17.png'})
-
-                # Text Section 3
-                content_to_display.append({'type': 'text', 'content': education_text_4})
-
-            break
+        break
 
 # Sliders for zooming
 x_range = st.slider('Horizontal Position (Zoom)', 0, 850, default_x_range, 50, key='x_slider')
