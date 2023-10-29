@@ -97,6 +97,9 @@ basilica_text_2 = """Below these towers, the main entrance offers a welcoming me
 basilica_text_3 = """As you wander through the side aisles, pay special attention to the array of altars, each dedicated to specific saints. These altars aren't just places of worship but also a reflection of the religious veneration of the time. From Saints Lucia and Cecilia in the northern aisle to Saints Agatha and Agnes in the southern aisle, each altar has its own story, deeply rooted in Christian lore."""
 basilica_text_4 = """Throughout the tour, consider how the basilica, even in its unbuilt state, draws from genuine medieval monastic designs. The St. Gall Plan beautifully marries function with faith, creating a tapestry of architectural brilliance and religious devotion. If you ever get a chance, compare this design with extant medieval monasteries to appreciate the similarities and differences in their architectural choices."""
 
+
+
+
 # Check if an area is selected from the dropdown
 if selected_area != 'None':
     zoom_to_area = True
@@ -112,7 +115,7 @@ if selected_area != 'None':
                 content_to_display.append({'type': 'text', 'content': basilica_text_1})
 
                 # Image 1
-                content_to_display.append({'type': 'image', 'content': 'app_images\image_0.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_0.png'})
 
                 # Text Section 2
                 content_to_display.append({'type': 'text', 'content': basilica_text_2})
