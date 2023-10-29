@@ -33,7 +33,7 @@ annotation_points = [
     {'name': 'Pens and Stables', 'x': 525, 'y': 300, 'text': 'Pens and Stables'},
     #{'name': 'Area 3', 'x': 258.98, 'y': 426.89, 'text': 'Area 3: New Explanation'},
     #{'name': 'Area 3', 'x': 300, 'y': 550, 'text': 'Area 3: New Explanation'},
-    {'name': 'Area 4', 'x': 725, 'y': 525, 'text': 'Area 4: New Explanation'},
+    {'name': 'Crafts and Artisans', 'x': 725, 'y': 525, 'text': 'Crafts and Artisans'},
     #{'name': 'Area 5', 'x': 504.38, 'y': 835.45, 'text': 'Area 5: New Explanation'}
     {'name': 'Area 5', 'x': 300, 'y': 900, 'text': 'Area 5: New Explanation'}
 ]
@@ -102,9 +102,11 @@ pens_stables_text_2 = """**Sheep:** Often reared for their wool, which was a cru
 pens_stables_text_3 = """**Brood Mares and Foals - Horse Breeding Area:**\n\nMonasteries often played a pivotal role in maintaining and improving local livestock breeds. The inclusion of a dedicated area for breeding mares and foals suggests an interest in horse husbandry. Horses were indispensable, not just for transportation, but also for various labor-intensive tasks around the monastery, such as plowing fields or hauling goods."""
 pens_stables_text_4 = """**Residence for Servants**:\n\nThis area denotes the housing for the monastic estate's labor force. Many of these individuals were likely serfs, bound to the land and the service of the monastery. The nature of serfdom in the medieval period meant that peasants, while not wholly owned by the monastery, were obligated to provide labor in exchange for the right to live on and farm a portion of the monastic lands. This relationship was multifaceted: while serfs had certain obligations to the monastery, the religious institution also had duties of protection and spiritual guidance toward them. The proximity of the servants' residence to the livestock areas is indicative of their roles in ensuring the day-to-day operation of the monastery's agricultural and animal husbandry practices."""
 
+crafts_text_1 = """Craftsmanship and Labor at the St. Gall Monastery\n\nThe intricate planning evident in the St. Gall Monastery showcases its ambition to be more than just a spiritual hub; it aimed to be a self-sustaining community, thriving on the diverse skills of its inhabitants. Here's a deeper dive into the various roles and facilities dedicated to craftsmanship and labor within the monastery:"""
+crafts_text_2 =
+
 # Check if an area is selected from the dropdown
-if selected_area != 'None':
-    zoom_to_area = True
+if selected_area != 'None':    zoom_to_area = True
     for point in annotation_points:
         if point['name'] == selected_area:
             zoom_x_range = [point['x'] - 200, point['x'] + 200]
