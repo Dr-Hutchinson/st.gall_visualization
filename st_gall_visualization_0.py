@@ -251,7 +251,7 @@ for point in annotation_points:
             content_to_display.append({'type': 'text', 'content': education_text_2})
 
             # Image 2
-            #content_to_display.append({'type': 'image', 'content': 'app_images/image_16.png'})
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_19.png'})
 
             # Text Section 3
             content_to_display.append({'type': 'text', 'content': education_text_3})
