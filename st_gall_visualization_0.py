@@ -195,7 +195,7 @@ if selected_area != 'None':
                 content_to_display.append({'type': 'text', 'content': health_text_2})
 
                 # Image 2
-                #content_to_display.append({'type': 'image', 'content': 'app_images/image_10.png'})
+                content_to_display.append({'type': 'image', 'content': 'app_images/image_12.png'})
 
                 # Text Section 3
                 content_to_display.append({'type': 'text', 'content': health_text_3})
