@@ -34,7 +34,7 @@ annotation_points = [
     #{'name': 'Area 3', 'x': 258.98, 'y': 426.89, 'text': 'Area 3: New Explanation'},
     #{'name': 'Area 3', 'x': 300, 'y': 550, 'text': 'Area 3: New Explanation'},
     {'name': 'Crafts and Artisans', 'x': 725, 'y': 525, 'text': 'Crafts and Artisans'},
-    {'name': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens', 'x': 725, 'y': 900, 'text': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens'}
+    {'name': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens', 'x': 615, 'y': 900, 'text': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens'}
     #{'name': 'Area 5', 'x': 300, 'y': 900, 'text': 'Area 5: New Explanation'}
 ]
 
