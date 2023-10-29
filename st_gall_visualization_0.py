@@ -112,6 +112,10 @@ health_text_3 = """**Bloodletting Room:**\n\nVenturing further, we encounter the
 health_text_4 = """**Rooms for the Critically Ill:**\n\nNearby, the rooms for the critically ill accentuate the monastery's comprehensive care ethos. Here, those with acute conditions were tended to in isolation, both to prevent contagion and to ensure a serene recovery environment.\n\n**Warming Rooms and Sleeping Rooms:** The adjacent Warming Rooms and Sleeping Rooms encapsulate the monastery's philosophy that healing is multifaceted, encompassing warmth, comfort, and restful repose.\n\n**Cloisters of the Sick & Novitiate:** At the heart of this healthcare hub is the Cloisters of the Sick and the Novitiate. This serene space provided solace to the ailing while also serving as a formative ground for novices— those individuals at the threshold of their monastic journey. A novice embarked on a period of intense spiritual and practical training, post which they would take their monastic vows and be fully integrated into the monastic community."""
 health_text_5 = """**Refectory and Store Rooms:** The Refectory stands as a testament to the monastery's holistic approach to life. More than just a dining hall, it was a space of communion and reflection where monks gathered for communal meals, emphasizing the integration of physical sustenance with spiritual nourishment. The medieval monastic diet was modest but nutritious, primarily consisting of grains like barley and rye, legumes, vegetables from the garden, and fruits from the orchard. On special occasions or for those requiring it, the diet could be supplemented with dairy products from cows and goats, and eggs from the chickens. Pigs provided a source of meat, though meat consumption was often limited due to religious observances. The presence of the pens for goats, cows, pigs, and chickens, alongside an orchard and vegetable garden in the St. Gall Plan, exemplifies a self-sustaining community, ensuring a balanced diet for its inhabitants."""
 
+orchard_text_1 = """**Sustenance and Serenity: The Orchard, Cemetery, Vegetable Garden, and Livestock**: As we journey to the upper right-hand corner of the St. Gall Plan, we are invited into the monastery's verdant realm, where the rhythms of nature and human endeavor harmoniously intertwine. This section unveils the monastery's dedication to self-sustainability, showcasing how each plot of land and every creature held a vital role in sustaining the community. From the tranquil repose of the departed in the Cemetery to the bustling activities in the Vegetable Garden and livestock quarters, this quadrant of the complex is a testament to the monastery's profound connection to the earth and its bounties. Join us as we delve deeper into this interplay of life, death, and daily sustenance."""
+orchard_text_2 = """**Orchard & Cemetery:** Directly adjoining each other, the Orchard and the Cemetery signify the delicate balance between life and death within the monastery. The Orchard, brimming with fruit-bearing trees, provided the community with fresh produce and symbolized life's bounty and nourishment. On the other hand, the Cemetery served as the final resting place for the departed, marking the end of life's journey, in a location that ensured their spirits would rest amid nature's serenity."""
+orchard_text_3 = """**Vegetable Garden:** Just to the right of the Cemetery, the Vegetable Garden is a testament to the monastery's self-sufficiency. Here, a variety of vegetables essential for the monastic diet were cultivated. This garden not only fed the community but also served as a place of labor, contemplation, and connection to the earth. Vegetables grown here formed the backbone of the daily meals in the Refectory, emphasizing fresh and seasonal produce."""
+orchard_text_4 = """**Geese Enclosure:** The Geese Enclosure, located at the very top-right corner, played multiple roles. Geese provided feathers for bedding and quills, meat for consumption, and eggs for both eating and use in baking. Additionally, geese often served as an early warning system due to their loud honks when strangers approached, indirectly bolstering the monastery's security.\n\n**Fowl Keeper's Residence:** Next to the Geese Enclosure is the residence of the Fowl Keeper. Tasked with tending to various birds within the monastery, the Fowl Keeper ensured their health, managed their breeding, and oversaw the collection of eggs. This position was crucial, given the significance of poultry in the monastic diet and economy.\n\n**Hen Pen:** The Hen Pen represents another pillar of the monastery's self-sustainability. Hens were invaluable for their consistent egg production, and their presence ensured a steady supply of protein for the community."""
 
 # Check if an area is selected from the dropdown
 if selected_area != 'None':
@@ -212,8 +216,28 @@ if selected_area != 'None':
                 # Text Section 3
                 content_to_display.append({'type': 'text', 'content': health_text_5})
 
-            elif selected_area == "Area 4":
-                content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
+            elif selected_area == "The Orchard, Cemetery, Vegetable Garden, and Livestock Pens":
+                # Text Section 1
+                content_to_display.append({'type': 'text', 'content': orchard_text_1})
+
+                # Image 1
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_11.png'})
+
+                # Text Section 2
+                content_to_display.append({'type': 'text', 'content': orchard_text_2})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_12.png'})
+
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': orchard_text_3})
+
+                # Image 2
+                #content_to_display.append({'type': 'image', 'content': 'app_images/image_13.png'})
+
+                # Text Section 3
+                content_to_display.append({'type': 'text', 'content': orchard_text_4})
+
             elif selected_area == "Area 5":
                 content_to_display.append({'type': 'text', 'content': 'Placeholder text'})
 
