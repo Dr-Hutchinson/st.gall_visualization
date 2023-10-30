@@ -10,7 +10,7 @@ This repository contains a Streamlit application designed to visualize the Plan 
 
 ## About the Plan of St. Gall
 
-The [Plan of St. Gall](https://digital.library.ucla.edu/catalog/ark:/21198/zz002kp2b7) is one of the most ancient architectural drawings that have survived to this day, originating from around the 9th century. It represents a monastic compound, including churches, houses, stables, kitchens, workshops, brewery, infirmary, and even a special house for bloodletting. Historically, it provides invaluable insights into the organization and the architectural ideals of medieval monastic life.
+The [Plan of St. Gall](https://digital.library.ucla.edu/catalog/ark:/21198/zz002kp2b7) is one of the most ancient architectural drawings that have survived to this day, originating from around the ninth century AD. It represents a monastic compound, including churches, houses, stables, kitchens, workshops, brewery, infirmary, and even a special house for bloodletting. Historically, it provides invaluable insights into the organization and the architectural ideals of medieval monastic life.
 
 ### App Visualization Content
 
