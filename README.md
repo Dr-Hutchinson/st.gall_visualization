@@ -1,4 +1,6 @@
-[Launch the Streamlit App](https://stgallvisualization.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://stgallvisualization.streamlit.app/)
+
+## Contents
 
 # Streamlit Visualization of the Plan of St. Gall
 
