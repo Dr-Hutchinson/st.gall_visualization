@@ -4,7 +4,10 @@
 
 # Streamlit Visualization of the Plan of St. Gall
 
-![Annotated Plan of St. Gall](https://github.com/Dr-Hutchinson/st.gall_visualization/blob/main/annotated_gall_plan.png)}
+![Annotated Plan of St. Gall](https://github.com/Dr-Hutchinson/st.gall_visualization/blob/main/annotated_gall_plan.png)
+
+<img src="https://github.com/Dr-Hutchinson/st.gall_visualization/blob/main/annotated_gall_plan.png" width="500" height="300">
+
 
 ## Overview
 
