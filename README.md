@@ -4,11 +4,11 @@
 
 # Streamlit Visualization of the Plan of St. Gall
 
-\text{![Annotated Plan of St. Gall](https://github.com/Dr-Hutchinson/st.gall_visualization/blob/main/annotated_gall_plan.png)}
+[Annotated Plan of St. Gall](https://github.com/Dr-Hutchinson/st.gall_visualization/blob/main/annotated_gall_plan.png)}
 
 ## Overview
 
-This repository contains a Streamlit application designed to visualize the Plan of St. Gall, an important architectural diagram from medieval Europe. The application uses Plotly for rendering visual elements and PIL for image manipulation.
+This repository contains a Streamlit application designed to visualize the Plan of St. Gall, an important architectural diagram from medieval Europe. The application uses Plotly for rendering the plan and Streamlit for .
 
 ## About the Plan of St. Gall
 
