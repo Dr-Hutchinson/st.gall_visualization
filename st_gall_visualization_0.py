@@ -227,11 +227,11 @@ for point in annotation_points:
             # Text Section 1
             content_to_display.append({'type': 'text', 'content': library_text_1})
             # Image 1
-            #content_to_display.append({'type': 'image', 'content': 'app_images/image_18.png'})
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_21.png'})
             # Text Section 2
             content_to_display.append({'type': 'text', 'content': library_text_2})
             # Image 2
-            #content_to_display.append({'type': 'image', 'content': 'app_images/image_19.png'})
+            content_to_display.append({'type': 'image', 'content': 'app_images/image_22.png'})
             # Text Section 3
             content_to_display.append({'type': 'text', 'content': library_text_4})
             # Image 2
