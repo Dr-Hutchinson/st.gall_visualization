@@ -118,6 +118,12 @@ education_text_2 = """**School:** At the core of the monastic educational journe
 education_text_3 = """**House for Guests and Pilgrims:** Embodying the Benedictine ethos of hospitality, the House for Guests was a testament to the monastery's commitment to welcoming all. Whether they were scholars seeking knowledge, travelers looking for shelter, or pilgrims on a spiritual journey, the monastery doors were always open. This practice of open-hearted welcome finds its roots in the "Rule of St. Benedict," which admonishes: "All guests who present themselves are to be welcomed as Christ, for he himself will say: I was a stranger and you welcomed me (Matt 25:35)." This quote underscores the profound reverence with which guests were regarded, seeing in them the very image of Christ."""
 education_text_4 = """**The Abbot's House:** The Abbot's House, prominently situated near the school and guest accommodations on the St. Gall Plan, stands as a testament to the abbot's paramount role in the monastery. As the spiritual and administrative leader, the abbot held divinely mandated authority, acting as Christ's representative within the community. Chosen for virtue and wisdom, he ensured adherence to the Rule of St. Benedict, oversaw the monastery's daily affairs, arbitrated disciplinary matters, and represented the institution in external interactions with nobility and the church. Moreover, embodying the Benedictine ethos of hospitality, the abbot's residence often welcomed guests, pilgrims, and those seeking counsel, making it a bastion of faith and benevolence in the medieval era."""
 
+library_text_1 = """**Sacred Scripts: The Monastic Scriptorium and Library of St. Gall**\n\nDuring the Carolingian Renaissance, monastic libraries and scriptoriums played a crucial role in the preservation and dissemination of knowledge. Monasteries were among the few institutions that supported literacy and intellectual pursuits during this period."""
+library_text_2 = """**Monastic Libraries:** Monastic libraries were the repositories of a vast array of texts, including religious scriptures, liturgical texts, works of the Church Fathers, and sometimes classical works from the ancient world. These libraries were central to the monastic educational system, providing the necessary resources for the monks to study and deepen their understanding of religious texts and other scholarly works. They also served as a bridge to the past, preserving texts that might otherwise have been lost to time."""
+library_text_3 = """**Scriptoriums:** The scriptorium was an essential part of a monastery, where monks would copy and illuminate manuscripts. This work was considered a form of devotion, and it contributed significantly to the preservation of texts. The scriptorium was often located near the library for easy access to texts that needed copying or repairing. It was in these scriptoriums that much of the illuminated manuscript tradition developed and flourished."""
+library_text_4 = """**Major Features of Medieval Illuminated Manuscripts:** Illuminated manuscripts are distinguished by their decorative elements which include a variety of features:\n\nInitials: Decorated initials often mark the beginning of texts, with elaborate designs extending into the margins.\n\nBorders: Ornamental borders frame the text and can include geometric designs, floral motifs, and sometimes scenes from the Bible or daily life.\n\nMiniatures: These are small paintings depicting scenes from the text or other relevant imagery, providing a visual representation to accompany the written word.\n\nHistoriated Initials: These are enlarged initials containing a scene or figures related to the text.\n\nMarginalia: Whimsical or illustrative elements in the margins, which can include animals, mythical creatures, or scenes from daily life.\n\nGold and Silver Leaf: The use of gold and silver leaf for decoration, lending the manuscripts a rich, luminous quality.\n\nThese features serve not only to beautify the manuscript but also to organize the text and illustrate its contents, enhancing the reader's engagement and understanding."""
+
+
 # Check if an area is selected Education and Hospitality at St. Gall= '\n\nIn the medieval era, monasteries weren't solely dedicated to worship; they also served as beacons of education, knowledge dissemination, and welcoming hospitality. The St. Gall Plan's meticulous design prominently features spaces that catered to both the mind and the soul, especially evident in the western sections of the monastery.one':
 #zoom_to_area = True
 
@@ -217,6 +223,21 @@ for point in annotation_points:
             content_to_display.append({'type': 'image', 'content': 'app_images/image_20.png'})
             # Text Section 3
             content_to_display.append({'type': 'text', 'content': education_text_4})
+        elif selected_area == "Library & Scriptorium":
+            # Text Section 1
+            content_to_display.append({'type': 'text', 'content': library_text_1})
+            # Image 1
+            #content_to_display.append({'type': 'image', 'content': 'app_images/image_18.png'})
+            # Text Section 2
+            content_to_display.append({'type': 'text', 'content': library_text_2})
+            # Image 2
+            #content_to_display.append({'type': 'image', 'content': 'app_images/image_19.png'})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': library_text_4})
+            # Image 2
+            #content_to_display.append({'type': 'image', 'content': 'app_images/image_20.png'})
+            # Text Section 3
+            content_to_display.append({'type': 'text', 'content': library_text_5})
         break
 
 
