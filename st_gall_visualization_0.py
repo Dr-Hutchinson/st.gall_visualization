@@ -31,7 +31,7 @@ annotation_points = [
     {'name': 'Health Care and Healing', 'x': 225, 'y': 875, 'text': 'Health Care and Healing'},
     {'name': 'Education and Hospitality', 'x': 175, 'y': 625, 'text': 'Education and Hospitality'},
     {'name': 'Pens and Stables', 'x': 525, 'y': 300, 'text': 'Pens and Stables'},
-    {'name': 'Library & Scriptorium', 'x': 225, 'y': 735, 'text': 'Library & Scriptorium'},
+    {'name': 'Library & Scriptorium', 'x': 230, 'y': 735, 'text': 'Library & Scriptorium'},
     #{'name': 'Area 3', 'x': 300, 'y': 550, 'text': 'Area 3: New Explanation'},
     {'name': 'Crafts and Artisans', 'x': 725, 'y': 525, 'text': 'Crafts and Artisans'},
     {'name': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens', 'x': 615, 'y': 900, 'text': 'The Orchard, Cemetery, Vegetable Garden, and Livestock Pens'}
