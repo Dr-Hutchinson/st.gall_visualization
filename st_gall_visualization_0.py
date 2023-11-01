@@ -251,10 +251,6 @@ for point in annotation_points:
             content_to_display.append({'type': 'image', 'content': 'app_images/two_leaves.jpg'})
             # Text Section 3
             content_to_display.append({'type': 'text', 'content': library_text_7})
-            # Image 2
-            st.write("To learn more about the production of medieval manuscripts, please see the following video:")
-
-            st.video("https://youtu.be/nuNfdHNTv9o?si=XFMUbDAutrJ168ZG")
         break
 
 
