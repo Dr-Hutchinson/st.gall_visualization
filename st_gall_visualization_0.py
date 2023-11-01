@@ -1,4 +1,4 @@
-9*54p[import base64
+import base64
 import plotly.graph_objects as go
 import streamlit as st
 from PIL import Image
