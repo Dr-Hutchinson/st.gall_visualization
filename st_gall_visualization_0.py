@@ -241,7 +241,7 @@ for point in annotation_points:
             # Image 2
             content_to_display.append({'type': 'image', 'content': 'app_images/Antiphonal_Leaf.jpg'})
             # Text Section 3
-            #content_to_display.append({'type': 'text', 'content': library_text_5})
+            content_to_display.append({'type': 'text', 'content': library_text_5})
         break
 
 
